@@ -44,3 +44,4 @@ trait LensLaws {
     l.set(l.get(a), a) === a
 }
 
+object LensLaws extends LensLaws

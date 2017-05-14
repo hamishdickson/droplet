@@ -86,3 +86,9 @@ case class Lens[A, B](
   } yield y
 }
 
+object Lens {
+  def identityLens[A] = Lens[A, A] (
+    a => a,
+    (_, a) => a
+  )
+}
